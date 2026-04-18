@@ -1,0 +1,249 @@
+        body{
+            background-color: #0b2a2d;
+            color: #fff;
+            font-family:"Lucida Console", "Courier New", "monospace";
+            font-weight: bold;
+            max-height:100%;
+        }
+        /* NAVIGATION AREA */
+        .navbar-nav {
+            text-decoration: none;
+            color: white;
+            text-transform: none;
+            transition: 0.25s ease;
+        }
+        .navigation{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .navigation li{
+            text-decoration: none;
+            margin: 0 0.75em 0 0.75em;
+        }
+        .navigation:hover a:hover{
+            color: #1a08a3;
+            box-shadow: 0 2px 0 0 currentColor;
+        }
+
+        .profile {
+            background-color: rgb(56, 56, 54);
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            position: relative;
+        }
+        .profile{
+            font-size: medium;
+            font-style: Arial;
+        }
+        .profile img {
+            max-height: 200px;
+            
+        }
+        .profile-text {
+            position: relative;
+            overflow: hidden;
+        }
+        .profile {
+            display: block;
+            height: 100%
+        }
+
+        /*For profile - sa baba ng name*/
+        .loader {
+            font-size: 2rem;
+            font-size: x-large;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .words {
+            height: 45px; /* Pantay sa text */
+            overflow: hidden;
+            margin-left: 15px;
+        }
+        .words span {
+            display: block;
+            height: 40px;
+            line-height: 35px;
+            color: #e7df05;
+            animation: spin 8s infinite;
+            }
+        @keyframes spin{
+            10%{
+                transform: translateY(-102%);
+            }
+            25%{
+                transform: translateY(-100%);
+            }
+            35%{
+                transform: translateY(-202%);
+            } 
+            50%{
+                transform: translateY(-200%);
+            }
+            60%{
+                transform: translateY(-302%);
+            }
+            75%{
+                transform: translateY(-300%);
+            }
+            85%{
+                transform: translateY(-402%);
+            }
+            100%{
+                transform: translateY(-400%);
+        }
+        }
+        
+        /* CSS for LIST and ACHIEVEMENTS*/
+        .list-group-item {
+            background-color: transparent !important; 
+            border: none;
+            color: white;
+            .about-section, .portfolio-section {
+            padding: 50px 0;
+        }
+        }
+        .achievements{
+            font-size: larger;
+            font-style: italic;
+        }
+        .carousel img {
+            border-radius: 10px;
+            height: 400px; 
+            object-fit: cover;
+            
+        }
+
+        /*CSS for HOBBIES */
+        .category-btn {
+            background-color: transparent;
+            border: 1px solid #298aa7;
+            color: #657f87;
+            margin: 5px;
+            padding: 5px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .category-btn:hover {
+            background-color: #00c4ff;
+            color: #000;
+        }
+        .card {
+            background: transparent;
+            color: white;          
+        }        
+        .hobbies-card img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        .hobbies-title {
+        font-size: 5rem; /* Big, bold heading */
+        font-weight: bold;
+        text-transform: uppercase;
+        background: linear-gradient(270deg, #ff0000, #ff9900, #00ffcc, #0066ff, #ff00ff);
+        background-size: 1000% 1000%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientChange 5s ease infinite;
+        }
+        /* Animation sa HOBBIES */
+        @keyframes gradientChange {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+            }/* FORCE ALL PROJECT CARDS SAME SIZE (CLEAN VERSION) */
+        #projects .card {
+            width: 100%;
+            max-width: 280px;   /* smaller box */
+            height: auto;       /* remove forced height */
+            display: flex;
+            flex-direction: column;
+            background: transparent;
+            color: white;
+            border: 1px solid #2a6f74;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* IMAGE */
+        #projects .card img {
+            width: 100%;
+            height: 300px;      /* smaller image */
+            object-fit: cover;
+        }
+
+        /* TEXT AREA (REMOVE BIG GAPS) */
+        #projects .card-body {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 4px;           /* tight spacing */
+        }
+
+        /* TEXT SPACING FIX */
+        #projects h5 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        #projects p {
+            margin: 0;
+            font-size: 0.85rem;
+            line-height: 1.2;
+        }
+
+        /* BUTTON */
+        #projects .btn {
+            margin-top: 8px;
+        }
+        /*CSS for the accordion*/
+        .accordion-container {
+            max-width: 700px; /* Smaller container */
+            margin: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-container:hover {
+            transform: scale(1.02); 
+        }
+
+        .accordion-button {
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .accordion-button:hover {
+            background-color: #70797b;
+            color: #b5b1b1;
+        }
+
+        .accordion-body {
+            background-color: #23949e;
+            color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .accordion-body:hover {
+            background-color: #44979e;
+        }
+        section {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        }
+
+
+
